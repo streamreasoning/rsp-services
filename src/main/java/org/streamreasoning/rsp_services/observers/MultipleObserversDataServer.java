@@ -18,7 +18,7 @@
  * This work was partially supported by the European project LarKC (FP7-215535) 
  * and by the European project MODAClouds (FP7-318484)
  ******************************************************************************/
-package polimi.deib.rsp_services.observers;
+package org.streamreasoning.rsp_services.observers;
 
 import org.restlet.data.MediaType;
 import org.restlet.data.Status;
@@ -27,6 +27,9 @@ import org.restlet.resource.ServerResource;
 
 public class MultipleObserversDataServer  extends ServerResource {
 
+	/* Method to get informations about all the observers
+	 *
+	 */
 	@Get
 	public void getObserversInfo(){
 		this.getResponse().setStatus(Status.SUCCESS_OK,"TODO: implement method to get information about all observers");

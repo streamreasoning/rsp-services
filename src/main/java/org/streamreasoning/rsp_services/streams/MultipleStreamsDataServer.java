@@ -18,7 +18,7 @@
  * This work was partially supported by the European project LarKC (FP7-215535) 
  * and by the European project MODAClouds (FP7-318484)
  ******************************************************************************/
-package polimi.deib.rsp_services.streams;
+package org.streamreasoning.rsp_services.streams;
 
 import org.restlet.data.MediaType;
 import org.restlet.data.Status;
@@ -27,6 +27,9 @@ import org.restlet.resource.ServerResource;
 
 public class MultipleStreamsDataServer extends ServerResource {
 
+	/* Method to get informations about all the registered streams
+	 * 
+	 */
 	@Get
 	public void getStreamsInformations(){
 		this.getResponse().setStatus(Status.SUCCESS_OK,"TODO: implement method to get informations about all registered streams");

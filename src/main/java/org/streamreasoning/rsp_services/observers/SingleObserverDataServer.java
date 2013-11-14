@@ -18,7 +18,7 @@
  * This work was partially supported by the European project LarKC (FP7-215535) 
  * and by the European project MODAClouds (FP7-318484)
  ******************************************************************************/
-package polimi.deib.rsp_services.observers;
+package org.streamreasoning.rsp_services.observers;
 
 import org.restlet.data.MediaType;
 import org.restlet.data.Status;
@@ -28,12 +28,19 @@ import org.restlet.resource.ServerResource;
 
 public class SingleObserverDataServer extends ServerResource {
 
+	/* Method to delete an observer
+	 * The implementation of this method needs to call the method removeObserver
+	 * of a class that implements RDF_Stream_Processor_Interface interface
+	 */
 	@Delete
 	public void unregisterObserver(){
 		this.getResponse().setStatus(Status.SUCCESS_OK,"TODO: implement method to delete observer from query");
 		this.getResponse().setEntity("TODO: implement method to delete observer from query", MediaType.TEXT_PLAIN);
 	}
 
+	/* Method to get informations about a specific observer
+	 *
+	 */
 	@Get
 	public void getObserverInfo(){
 		this.getResponse().setStatus(Status.SUCCESS_OK,"TODO: implement method to get informations about specified observer");

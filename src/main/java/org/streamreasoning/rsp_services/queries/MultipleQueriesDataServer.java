@@ -18,7 +18,7 @@
  * This work was partially supported by the European project LarKC (FP7-215535) 
  * and by the European project MODAClouds (FP7-318484)
  ******************************************************************************/
-package polimi.deib.rsp_services.queries;
+package org.streamreasoning.rsp_services.queries;
 
 import org.restlet.data.MediaType;
 import org.restlet.data.Status;
@@ -27,6 +27,9 @@ import org.restlet.resource.ServerResource;
 
 public class MultipleQueriesDataServer extends ServerResource {
 
+	/* Method to get informations about all registered queries
+	 *
+	 */
 	@Get
 	public void getQueriesInformations(){
 		this.getResponse().setStatus(Status.SUCCESS_OK,"TODO: implement method to get informations about all registered queries");

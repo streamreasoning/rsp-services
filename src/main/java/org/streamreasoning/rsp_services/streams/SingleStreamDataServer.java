@@ -18,7 +18,7 @@
  * This work was partially supported by the European project LarKC (FP7-215535) 
  * and by the European project MODAClouds (FP7-318484)
  ******************************************************************************/
-package polimi.deib.rsp_services.streams;
+package org.streamreasoning.rsp_services.streams;
 
 import org.restlet.data.MediaType;
 import org.restlet.data.Status;
@@ -31,24 +31,39 @@ import org.restlet.resource.ServerResource;
 
 public class SingleStreamDataServer extends ServerResource {
 
+	/* Method to register new stream
+	 * The implementation of this method needs to call the method registerStream 
+	 * of a class that implements RDF_Stream_Processor_Interface interface
+	 */
 	@Put
 	public void registerStream(){
 		this.getResponse().setStatus(Status.SUCCESS_OK,"TODO: implement method to register new stream");
 		this.getResponse().setEntity("TODO: implement method to register new stream", MediaType.TEXT_PLAIN);
 	}
 
+	/* Method to delete stream 
+	 * The implementation of this method needs to call the method unregisterStream 
+	 * of a class that implements RDF_Stream_Processor_Interface interface
+	 */
 	@Delete
 	public void unregisterStream(){
 		this.getResponse().setStatus(Status.SUCCESS_OK,"TODO: implement method to unregister stream");
 		this.getResponse().setEntity("TODO: implement method to unregister stream", MediaType.TEXT_PLAIN);
 	}
 
+	/* Method to feed registered stream 
+	 * The implementation of this method needs to call the method feed_RDF_stream 
+	 * of a class that implements RDF_Stream_Interface interface
+	 */
 	@Post
 	public void feedStream(Representation rep){
 		this.getResponse().setStatus(Status.SUCCESS_OK,"TODO: implement method to feed stream");
 		this.getResponse().setEntity("TODO: implement method to feed stream", MediaType.TEXT_PLAIN);
 	}
 
+	/* Method to get informations about single registered stream 
+	 * 
+	 */
 	@Get
 	public void getStreamInformations(){
 		this.getResponse().setStatus(Status.SUCCESS_OK,"TODO: implement method to get information about specific stream");

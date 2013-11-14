@@ -18,7 +18,7 @@
  * This work was partially supported by the European project LarKC (FP7-215535) 
  * and by the European project MODAClouds (FP7-318484)
  ******************************************************************************/
-package polimi.deib.rsp_services.server;
+package org.streamreasoning.rsp_services.server;
 
 import org.restlet.Application;
 import org.restlet.Component;
@@ -26,14 +26,14 @@ import org.restlet.Restlet;
 import org.restlet.data.Protocol;
 import org.restlet.routing.Router;
 import org.restlet.routing.Template;
+import org.streamreasoning.rsp_services.configuration.Config;
+import org.streamreasoning.rsp_services.observers.MultipleObserversDataServer;
+import org.streamreasoning.rsp_services.observers.SingleObserverDataServer;
+import org.streamreasoning.rsp_services.queries.MultipleQueriesDataServer;
+import org.streamreasoning.rsp_services.queries.SingleQueryDataServer;
+import org.streamreasoning.rsp_services.streams.MultipleStreamsDataServer;
+import org.streamreasoning.rsp_services.streams.SingleStreamDataServer;
 
-import polimi.deib.rsp_services.configuration.Config;
-import polimi.deib.rsp_services.observers.MultipleObserversDataServer;
-import polimi.deib.rsp_services.observers.SingleObserverDataServer;
-import polimi.deib.rsp_services.queries.MultipleQueriesDataServer;
-import polimi.deib.rsp_services.queries.SingleQueryDataServer;
-import polimi.deib.rsp_services.streams.MultipleStreamsDataServer;
-import polimi.deib.rsp_services.streams.SingleStreamDataServer;
 
 
 public class rsp_service_server extends Application{
