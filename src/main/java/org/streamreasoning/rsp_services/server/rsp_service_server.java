@@ -34,12 +34,14 @@ import org.streamreasoning.rsp_services.queries.SingleQueryDataServer;
 import org.streamreasoning.rsp_services.streams.MultipleStreamsDataServer;
 import org.streamreasoning.rsp_services.streams.SingleStreamDataServer;
 
-
-
 public class rsp_service_server extends Application{
 
 	private static Component component;
 
+	/*
+	 * The implementation of this main method needs to call the method initialize  
+	 * of a class that implements RDF_Stream_Processor_Interface interface
+	 */
 	public static void main(String[] args) throws Exception{
 		
 		component = new Component();

@@ -54,7 +54,8 @@ public class SingleQueryDataServer extends ServerResource {
 	/* Method to register new stream
 	 * The implementation of this method needs to call the methods addObserver and changeQueryStatus 
 	 * of a class that implements Continuous_Query_Interface interface and mathods startQuery and stopQuery 
-	 * of a class that implements RDF_Stream_Processor_Interface interface
+	 * of a class that implements RDF_Stream_Processor_Interface interface.
+	 * The new Observer must be a class that implements Continuous_Query_Observer_Interface interface
 	 */
 	@Post
 	public void changeQueryStatus(Representation rep){
