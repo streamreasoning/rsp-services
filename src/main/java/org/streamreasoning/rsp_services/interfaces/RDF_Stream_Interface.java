@@ -17,6 +17,10 @@ package org.streamreasoning.rsp_services.interfaces;
 
 public interface RDF_Stream_Interface {
 	
+	/**
+	 * Method to put new data into RDF_Stream_Interface object
+	 * @param dataSerialization serialization representing new data to put into the stream
+	 */
 	public void feed_RDF_stream(Object dataSerialization);
 	
 }

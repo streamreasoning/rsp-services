@@ -26,7 +26,8 @@ import org.restlet.resource.ServerResource;
 
 public class SingleStreamDataServer extends ServerResource {
 
-	/* Method to register new stream
+	/**
+	 * Method to register new stream
 	 * The implementation of this method needs to call the method registerStream 
 	 * of a class that implements RDF_Stream_Processor_Interface interface
 	 */
@@ -36,7 +37,8 @@ public class SingleStreamDataServer extends ServerResource {
 		this.getResponse().setEntity("TODO: implement method to register new stream", MediaType.TEXT_PLAIN);
 	}
 
-	/* Method to delete stream 
+	/**
+	 * Method to delete stream 
 	 * The implementation of this method needs to call the method unregisterStream 
 	 * of a class that implements RDF_Stream_Processor_Interface interface
 	 */
@@ -46,7 +48,8 @@ public class SingleStreamDataServer extends ServerResource {
 		this.getResponse().setEntity("TODO: implement method to unregister stream", MediaType.TEXT_PLAIN);
 	}
 
-	/* Method to feed registered stream 
+	/**
+	 * Method to feed registered stream 
 	 * The implementation of this method needs to call the method feed_RDF_stream 
 	 * of a class that implements RDF_Stream_Interface interface
 	 */
@@ -56,8 +59,8 @@ public class SingleStreamDataServer extends ServerResource {
 		this.getResponse().setEntity("TODO: implement method to feed stream", MediaType.TEXT_PLAIN);
 	}
 
-	/* Method to get informations about single registered stream 
-	 * 
+	/**
+	 * Method to get informations about single registered stream 
 	 */
 	@Get
 	public void getStreamInformations(){

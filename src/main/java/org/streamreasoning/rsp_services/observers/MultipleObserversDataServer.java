@@ -22,8 +22,8 @@ import org.restlet.resource.ServerResource;
 
 public class MultipleObserversDataServer  extends ServerResource {
 
-	/* Method to get informations about all the observers
-	 *
+	/**
+	 *  Method to get informations about all the observers
 	 */
 	@Get
 	public void getObserversInfo(){

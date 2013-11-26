@@ -26,7 +26,8 @@ import org.restlet.resource.ServerResource;
 
 public class SingleQueryDataServer extends ServerResource {
 
-	/* Method to register new query
+	/**
+	 * Method to register new query
 	 * The implementation of this method needs to call the method registerQuery 
 	 * of a class that implements RDF_Stream_Processor_Interface interface
 	 */
@@ -36,7 +37,8 @@ public class SingleQueryDataServer extends ServerResource {
 		this.getResponse().setEntity("TODO: implement method to register new query", MediaType.TEXT_PLAIN);	
 	}
 
-	/* Method to register new stream
+	/**
+	 * Method to register new stream
 	 * The implementation of this method needs to call the method unregisterQuery
 	 * of a class that implements RDF_Stream_Processor_Interface interface
 	 */
@@ -46,7 +48,8 @@ public class SingleQueryDataServer extends ServerResource {
 		this.getResponse().setEntity("TODO: implement method to unregister query", MediaType.TEXT_PLAIN);	
 	}
 
-	/* Method to register new stream
+	/**
+	 * Method to register new stream
 	 * The implementation of this method needs to call the methods addObserver and changeQueryStatus 
 	 * of a class that implements Continuous_Query_Interface interface and mathods startQuery and stopQuery 
 	 * of a class that implements RDF_Stream_Processor_Interface interface.
@@ -58,8 +61,8 @@ public class SingleQueryDataServer extends ServerResource {
 		this.getResponse().setEntity("TODO: implement method to change query status or add new observer", MediaType.TEXT_PLAIN);
 	}
 
-	/* Method to get informations about a specific registered query
-	 *
+	/**
+	 * Method to get informations about a specific registered query
 	 */
 	@Get
 	public void getQueryInformations(){

@@ -33,7 +33,7 @@ public class rsp_service_server extends Application{
 
 	private static Component component;
 
-	/*
+	/**
 	 * The implementation of this main method needs to call the method initialize  
 	 * of a class that implements RDF_Stream_Processor_Interface interface
 	 */

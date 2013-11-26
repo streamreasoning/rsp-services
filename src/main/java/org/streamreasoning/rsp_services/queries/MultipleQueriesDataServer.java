@@ -22,8 +22,8 @@ import org.restlet.resource.ServerResource;
 
 public class MultipleQueriesDataServer extends ServerResource {
 
-	/* Method to get informations about all registered queries
-	 *
+	/**
+	 * Method to get informations about all registered queries
 	 */
 	@Get
 	public void getQueriesInformations(){

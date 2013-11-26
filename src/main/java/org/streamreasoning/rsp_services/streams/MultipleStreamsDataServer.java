@@ -22,8 +22,8 @@ import org.restlet.resource.ServerResource;
 
 public class MultipleStreamsDataServer extends ServerResource {
 
-	/* Method to get informations about all the registered streams
-	 * 
+	/**
+	 *  Method to get informations about all the registered streams
 	 */
 	@Get
 	public void getStreamsInformations(){

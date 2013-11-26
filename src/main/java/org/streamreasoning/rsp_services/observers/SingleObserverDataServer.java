@@ -23,7 +23,8 @@ import org.restlet.resource.ServerResource;
 
 public class SingleObserverDataServer extends ServerResource {
 
-	/* Method to delete an observer
+	/** 
+	 * Method to delete an observer
 	 * The implementation of this method needs to call the method removeObserver
 	 * of a class that implements RDF_Stream_Processor_Interface interface
 	 */
@@ -33,7 +34,8 @@ public class SingleObserverDataServer extends ServerResource {
 		this.getResponse().setEntity("TODO: implement method to delete observer from query", MediaType.TEXT_PLAIN);
 	}
 
-	/* Method to get informations about a specific observer
+	/**
+	 *  Method to get informations about a specific observer
 	 *
 	 */
 	@Get
