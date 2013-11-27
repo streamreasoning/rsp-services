@@ -14,7 +14,7 @@ Our work proposes a restful interface for RDF Stream Processors that is:
 Online resources
 ------------
 
-Before reading the rest you can have a 5 minutes presentation of the key concepts having a look to this video:
+Before reading the rest you can have a 5 minutes presentation of the key concepts having a look at this video:
 https://www.youtube.com/watch?v=f2oQa8CEw_s
 
 For more information visit http://streamreasoning.org/download/rsp-services
