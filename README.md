@@ -47,7 +47,7 @@ For a complete example of implementation, go to https://github.com/streamreasoni
 Javadoc
 ------------
 
-http://streamreasoning.org/documentation/javadoc/
+http://streamreasoning.org/documentation/javadoc/rsp-services/
 
 Maven
 ------------
