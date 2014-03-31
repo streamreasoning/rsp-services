@@ -58,7 +58,7 @@ Add new maven repository to pom file
 	....
 	<repository>
 		<id>streamreasoning_repository</id>
-		<name>Csparql server repository</name>
+		<name>streamreasoning repository</name>
 		<url>http://streamreasoning.org/maven/</url>
 		<layout>default</layout>
 	</repository>
@@ -71,7 +71,7 @@ Dependecy
 	<dependency>
 		<groupId>org.streamreasoning</groupId>
 		<artifactId>rsp-services</artifactId>
-		<version>0.4</version>
+		<version>latest_version_available</version>
 	</dependency>
 	...
 </dependencies>
