@@ -21,7 +21,7 @@ public interface RDF_Stream_Processor_Interface {
 	/**
 	 * Method to initialize the class that implements RDF_Stream_Processor_Interface Interface
 	 */
-	public void initialize();
+	public void initialize() throws Exception;
 	
 	/**
 	 * Method to get the RDFStream processor object
