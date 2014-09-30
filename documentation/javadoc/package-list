@@ -1,0 +1,7 @@
+org.streamreasoning.rsp_services.commons
+org.streamreasoning.rsp_services.configuration
+org.streamreasoning.rsp_services.interfaces
+org.streamreasoning.rsp_services.observers
+org.streamreasoning.rsp_services.queries
+org.streamreasoning.rsp_services.server
+org.streamreasoning.rsp_services.streams
